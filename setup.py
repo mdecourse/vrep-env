@@ -1,4 +1,6 @@
+
 from setuptools import setup, find_packages
+# 已經改為 remoteApi.dll
 
 install_requires=[
     'gym',
@@ -11,6 +13,6 @@ setup(name='vrep_env',
       url='https://github.com/ycps/vrep-env',
       packages=[package for package in find_packages() if package.startswith('vrep_env')],
       install_requires=install_requires,
-      package_data={'': ['remoteApi.so']},
+      package_data={'': ['remoteApi.dll']},
       include_package_data=True
 )
